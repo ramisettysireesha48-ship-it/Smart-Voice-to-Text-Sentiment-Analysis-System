@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Voice Sentiment Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">🎙️</div>
+            <h1>Smart Voice-to-Text Sentiment Analysis</h1>
+            <p>Convert your voice into text and analyze its sentiment instantly.</p>
+        </header>
+
+        <main>
+
+            <!-- Voice Section -->
+            <section class="card">
+
+                <h2>🎤 Voice Input</h2>
+
+                <p class="instruction">
+                    Click the button and speak clearly into your microphone.
+                </p>
+
+                <button id="startBtn" class="voice-btn">
+                    🎤 Start Speaking
+                </button>
+
+                <p id="status" class="status">
+                    Microphone is ready
+                </p>
+
+            </section>
+
+
+            <!-- Text Section -->
+            <section class="card">
+
+                <h2>📝 Converted Text</h2>
+
+                <textarea
+                    id="textInput"
+                    placeholder="Your speech will appear here..."
+                ></textarea>
+
+                <div class="buttons">
+
+                    <button id="analyzeBtn" class="analyze-btn">
+                        🔍 Analyze Sentiment
+                    </button>
+
+                    <button id="clearBtn" class="clear-btn">
+                        🗑️ Clear
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Result Section -->
+            <section class="result-card">
+
+                <h2>📊 Sentiment Result</h2>
+
+                <div class="result">
+
+                    <div class="sentiment-box">
+
+                        <span id="emoji">😐</span>
+
+                        <h3 id="sentiment">
+                            Waiting for analysis
+                        </h3>
+
+                        <p id="score">
+                            Sentiment score: 0
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            <p>
+                Smart Voice-to-Text Sentiment Analysis System
+            </p>
+            <span>B.Tech CSE Project</span>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
